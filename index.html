@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="./styles/css/style.css">
+	<link rel="stylesheet" href="./fonts/Manrope/stylesheet.css">
 </head>
 
 <body>
+	<div class="wrapper">
+		<div class="container">
+			<div class="title">glitch text animation</div>
+			<div class="body">
+				<div class="inputs__block">
+					<textarea name="word" id="word" cols="30" rows="10" placeholder="word/sentence"></textarea>
+					<div class="inputs__block-body">
+						<div class="type-btn btn" type="button" value="lowercase" data-value="qwertyuiopasdfghjklzxcvbnm">
+							lowercase</div>
+						<div class="type-btn btn" type="button" value="lowercase" data-value="QWERTYUIOPASDFGHJKLZXCVBNM">
+							uppercase</div>
+						<div class="type-btn btn" type="button" value="lowercase" data-value="1234567890">numbers</div>
+					</div>
+					<button class="btn" id="start-glitch">Glitch it out</button>
+				</div>
 
-	<div class="result"></div>
+				<div class="result" id="result">
+
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 	<script src="script.js"></script>
 </body>

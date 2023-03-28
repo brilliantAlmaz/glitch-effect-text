@@ -1,0 +1,155 @@
+@import "nullstyle.scss";
+
+body,
+html {
+	overflow-x: hidden;
+}
+.wrapper {
+	font-family: "Manrope";
+	padding: 70px 0;
+}
+.container {
+	max-width: 1230px;
+	margin: 0 auto;
+	//background: red;
+}
+.title {
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 55px;
+	/* identical to box height */
+
+	letter-spacing: 0.115em;
+	text-transform: uppercase;
+
+	color: #000000;
+}
+.body {
+	margin: 60px 0 0 0;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr 1fr;
+}
+textarea {
+	height: 80px;
+	flex: 0 0 48%;
+	min-width: 100%;
+	display: block;
+	resize: vertical;
+	border: 1px solid #000;
+
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 33px;
+	/* identical to box height */
+
+	letter-spacing: 0.115em;
+
+	color: #000000;
+	padding: 13px 18px;
+}
+.inputs__block {
+}
+.inputs__block-body {
+	margin: 20px 0 0 0;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.btn {
+	cursor: pointer;
+}
+.result {
+	padding: 20px;
+	border: 1px solid #000;
+
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 33px;
+	/* identical to box height */
+
+	letter-spacing: 0.115em;
+
+	color: #000000;
+}
+
+input {
+	display: block;
+	height: 60px;
+	padding: 13px 18px;
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 33px;
+	/* identical to box height */
+
+	letter-spacing: 0.115em;
+
+	color: #000000;
+}
+
+#start-glitch {
+	transition: all 0.3s ease 0s;
+	margin: 100px 0 0 0;
+	bottom: 0;
+	width: 300px;
+	height: 80px;
+	padding: 0 23px;
+	text-align: center;
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 33px;
+	/* identical to box height */
+
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+
+	color: #000000;
+	background: transparent;
+	border: 1px solid #000;
+
+	&:hover {
+		background: #000;
+		color: #fff;
+	}
+}
+
+.type-btn {
+	transition: all 0.3s ease 0s;
+	height: 60px;
+	padding: 13px 0;
+	text-align: center;
+
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 33px;
+	/* identical to box height */
+
+	letter-spacing: 0.115em;
+	background: transparent;
+	border: 1px solid #000;
+	&:hover {
+		background: #ccc;
+		color: #fff;
+	}
+	&.active {
+		background: #000;
+		color: #fff;
+	}
+	&.active:hover {
+		background: #000;
+		color: #fff;
+	}
+}

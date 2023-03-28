@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  font-family: "Manrope";
+  padding: 70px 0;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 55px;
+  /* identical to box height */
+  letter-spacing: 0.115em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.body {
+  margin: 60px 0 0 0;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+textarea {
+  height: 80px;
+  flex: 0 0 48%;
+  min-width: 100%;
+  display: block;
+  resize: vertical;
+  border: 1px solid #000;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  letter-spacing: 0.115em;
+  color: #000000;
+  padding: 13px 18px;
+}
+
+.inputs__block-body {
+  margin: 20px 0 0 0;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.result {
+  padding: 20px;
+  border: 1px solid #000;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  letter-spacing: 0.115em;
+  color: #000000;
+}
+
+input {
+  display: block;
+  height: 60px;
+  padding: 13px 18px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  letter-spacing: 0.115em;
+  color: #000000;
+}
+
+#start-glitch {
+  transition: all 0.3s ease 0s;
+  margin: 100px 0 0 0;
+  bottom: 0;
+  width: 300px;
+  height: 80px;
+  padding: 0 23px;
+  text-align: center;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  background: transparent;
+  border: 1px solid #000;
+}
+#start-glitch:hover {
+  background: #000;
+  color: #fff;
+}
+
+.type-btn {
+  transition: all 0.3s ease 0s;
+  height: 60px;
+  padding: 13px 0;
+  text-align: center;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  letter-spacing: 0.115em;
+  background: transparent;
+  border: 1px solid #000;
+}
+.type-btn:hover {
+  background: #ccc;
+  color: #fff;
+}
+.type-btn.active {
+  background: #000;
+  color: #fff;
+}
+.type-btn.active:hover {
+  background: #000;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
