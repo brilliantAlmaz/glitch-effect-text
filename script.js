@@ -6,6 +6,36 @@ const wordInput = document.querySelector('textarea#word')
 
 let characters = '';
 
+let charactersTemp;
+const langButtons = document.querySelectorAll('.btn.lang')
+langButtons.forEach(function (item, index) {
+	item.addEventListener('click', function () {
+		item.classList.toggle('active');
+		if (item.classList.contains('active')) {
+
+			if (index == 0) {
+				characterItems[0].setAttribute(`data-value`, characterItems[0].getAttribute('data-value') + 'йцукенгшщзхъфывапролджэячсмитьбю')
+				characterItems[1].setAttribute(`data-value`, characterItems[1].getAttribute('data-value') + 'ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ')
+			}
+			else {
+				characterItems[0].setAttribute(`data-value`, characterItems[0].getAttribute('data-value') + 'qwertyuiopasdfghjklzxcvbnm')
+				characterItems[1].setAttribute(`data-value`, characterItems[1].getAttribute('data-value') + 'QWERTYUIOPASDFGHJKLZXCVBNM')
+			}
+		}
+		else {
+			if (index == 0) {
+				characterItems[0].setAttribute(`data-value`, characterItems[0].getAttribute('data-value').replaceAll('йцукенгшщзхъфывапролджэячсмитьбю', ''));
+				characterItems[1].setAttribute(`data-value`, characterItems[1].getAttribute('data-value').replaceAll('ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ', ''));
+			}
+			else {
+				characterItems[0].setAttribute(`data-value`, characterItems[0].getAttribute('data-value').replaceAll('qwertyuiopasdfghjklzxcvbnm', ''));
+				characterItems[1].setAttribute(`data-value`, characterItems[1].getAttribute('data-value').replaceAll('QWERTYUIOPASDFGHJKLZXCVBNM', ''));
+			}
+		}
+		console.log(characterItems[0].getAttribute(`data-value`));
+	});
+});
+
 characterItems.forEach(function (i) {
 	i.addEventListener('click', function () {
 
@@ -19,6 +49,13 @@ characterItems.forEach(function (i) {
 })
 
 
+
+//where do you want the text appear
+const result = document.querySelector('.result');
+
+//characters
+
+
 let initInterval, initTimeout;
 
 startButton.addEventListener('click', function () {
@@ -29,41 +66,16 @@ startButton.addEventListener('click', function () {
 		clearInterval(initInterval);
 
 		let word = wordInput.value;
+		startButton.style.pointerEvents = 'none';
 		initInterval = setInterval(() => { glitchText(word, characters) }, 100);
 		initTimeout = setTimeout(() => {
 			clearInterval(initInterval)
 			initInterval = null;
-			getNormal(word, characters)
+			getNormal(word, characters);
+			startButton.style.pointerEvents = 'auto';
 		}, 1000);
 	}
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//what word/sentence do you want to display
-let word = 'I like it here, I am a programmer';
-
-//where do you want the text appear
-const result = document.querySelector('.result');
-
-//english characters
-const charactersLowercase = 'abcdefghijklmnopqrstuvwxyz';
-const charactersUppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-const charactersNumbers = '0123456789';
 
 let tempWord;
 //glitch making function

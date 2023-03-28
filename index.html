@@ -1,38 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-
 
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Хак / Глюк текст | by brilliantAlmaz</title>
 	<link rel="stylesheet" href="./styles/css/style.css">
 	<link rel="stylesheet" href="./fonts/Manrope/stylesheet.css">
+	<meta name="description"
+		content="Хак/глюк анимация текста. Сделано для сайта полностью на JavaScript без фреймворков. ">
+	<meta>
 </head>
 
 <body>
 	<div class="wrapper">
-		<div class="container">
-			<div class="title">glitch text animation</div>
-			<div class="body">
-				<div class="inputs__block">
-					<textarea name="word" id="word" cols="30" rows="10" placeholder="word/sentence"></textarea>
-					<div class="inputs__block-body">
-						<div class="type-btn btn" type="button" value="lowercase" data-value="qwertyuiopasdfghjklzxcvbnm">
-							lowercase</div>
-						<div class="type-btn btn" type="button" value="lowercase" data-value="QWERTYUIOPASDFGHJKLZXCVBNM">
-							uppercase</div>
-						<div class="type-btn btn" type="button" value="lowercase" data-value="1234567890">numbers</div>
+		<header>
+			<div class="container">
+				<div class="header__body">
+					<div class="header__logo logo">brilliantAlmaz</div>
+					<div class="header__link-list">
+						<a href="https://github.com/brilliantAlmaz" target="_blank" class="header__link-item">
+							<img src="/img/mdi_github.svg" alt="github">
+						</a>
+						<a href="https://www.behance.net/brilliantalmaz" target="_blank" class="header__link-item">
+							<img src="/img/ion_logo-behance.svg" alt="behance">
+						</a>
+						<a href="https://vk.com/tkafmn" target="_blank" class="header__link-item">
+							<img src="/img/uil_vk.svg" alt="vkontakte">
+						</a>
+						<a href="https://t.me/brilliantA" target="_blank" class="header__link-item">
+							<img src="/img/ic_baseline-telegram.svg" alt="telegram">
+						</a>
 					</div>
-					<button class="btn" id="start-glitch">Glitch it out</button>
-				</div>
-
-				<div class="result" id="result">
-
 				</div>
 			</div>
-		</div>
+		</header>
+		<main>
+			<div class="container">
+				<div class="title">Хак текст Анимация </div>
+				<div class="body">
+					<div class="inputs__block">
+						<textarea name="word" id="word" cols="30" rows="10" placeholder="слово/предложение"></textarea>
+						<div class="inputs__lang">
+							<div class="type-btn btn lang" type="button" value="1" data-value="">
+								русский</div>
+							<div class="type-btn btn lang" type="button" value="english" data-value="">
+								английский</div>
+						</div>
+						<div class="inputs__block-body">
+							<div class="type-btn btn" type="button" value="lowercase" data-value="">
+								строчный</div>
+							<div class="type-btn btn" type="button" value="uppercase" data-value="">
+								заглавный</div>
+							<div class="type-btn btn" type="button" value="numbers" data-value="1234567890">цифры</div>
+						</div>
+						<button class="btn" id="start-glitch">Хакнуть</button>
+					</div>
+
+					<div class="result" id="result">
+
+					</div>
+				</div>
+			</div>
+		</main>
+
 	</div>
 
 

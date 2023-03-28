@@ -3,10 +3,10 @@
 body,
 html {
 	overflow-x: hidden;
+	height: 100%;
 }
 .wrapper {
 	font-family: "Manrope";
-	padding: 70px 0;
 }
 .container {
 	max-width: 1230px;
@@ -58,7 +58,6 @@ textarea {
 	margin: 20px 0 0 0;
 	display: grid;
 	gap: 20px;
-	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .btn {
@@ -152,4 +151,74 @@ input {
 		background: #000;
 		color: #fff;
 	}
+}
+
+.inputs__lang {
+	margin: 20px 0 0 0;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr 1fr;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+main {
+	margin: 70px 0 0 0;
+	flex: 1 1 auto;
+}
+header {
+	display: block;
+	padding: 16px 0;
+	background: #000;
+	color: #fff;
+}
+.container {
+}
+.header__body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__logo {
+}
+.logo {
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 48px;
+	/* identical to box height */
+
+	color: #ffffff;
+}
+.header__link-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+.header__link-item {
+	display: block;
+	position: relative;
+
+	img {
+		filter: invert(1);
+		width: 100%;
+		display: block;
+		transition: all 0.3s ease 0s;
+		object-fit: cover;
+		aspect-ratio: 1/1;
+	}
+	&:hover {
+		img {
+			filter: invert(0);
+		}
+	}
+}
+
+footer {
+	font-size: 6px;
 }
